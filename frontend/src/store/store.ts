@@ -1,15 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { useDispatch, useSelector } from 'react-redux'
+import {configureStore} from '@reduxjs/toolkit'
+import {useDispatch, useSelector} from 'react-redux'
 // @ts-ignore
-import type { RootState, AppDispatch } from './store'
-import counterReducer from '../features/counter/counterSlice'
+import type {RootState, AppDispatch} from './store'
 import blogReducer from '../features/blog/blogSlice'
-
 
 
 export const store = configureStore({
     reducer: {
-       counter:counterReducer,
         blog: blogReducer,
     },
 })
