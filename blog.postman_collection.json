@@ -69,6 +69,30 @@
 				"method": "GET",
 				"header": [],
 				"url": {
+					"raw": "http://127.0.0.1:8083/api/post/674c4bbe142b268c42193e64",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"post",
+						"674c4bbe142b268c42193e64"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
 					"raw": "http://127.0.0.1:8083/api/post/6748bf4c719eace4884e192b",
 					"protocol": "http",
 					"host": [
@@ -81,6 +105,40 @@
 					"path": [
 						"api",
 						"post",
+						"6748bf4c719eace4884e192b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"dwds\",\r\n    \"email\":\"de@gmail.com\",\r\n    \"title\":\"dededad\",\r\n    \"message\":\"dsadsadsadsadsadsadsadsadsadsadsa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8083/api/post/update/6748bf4c719eace4884e192b",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"post",
+						"update",
 						"6748bf4c719eace4884e192b"
 					]
 				}
